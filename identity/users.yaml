@@ -1,0 +1,33 @@
+users:
+  thoughtbulls:
+    email: thoughtbullswork@gmail.com
+    display_name: Dataplatform Admin
+
+  naren:
+    email: db.naren_k.eng@zohomail.in
+    display_name: Narendra Kashyap
+
+  neetu:
+    email: db.neetu_s.eng@zohomail.in
+    display_name: Neetu Sharma
+
+  neha:
+    email: db.neha_verma.eng@zohomail.in
+    display_name: Neha Verma
+
+  sumi:
+    email: db.sumi_verma.eng@zohomail.in
+    display_name: Sumi Verma
+
+  poonam:
+    email: db.poonam_v.anlst@zohomail.in
+    display_name: Poonam Verma
+
+  riya:
+    email: db.riya_r.anlst@zohomail.in
+    display_name: Riya Raghuwanshi
+
+  vishesh:
+    email: db.vishesh_s.da@zohomail.in
+    display_name: Vishesh Sharma
+ 

@@ -1,0 +1,14 @@
+groups:
+  dp-platform-admins:
+    - thoughtbullswork@gmail.com
+
+  dp-sales-engineers:
+    - db.naren_k.eng@zohomail.in
+    - db.neha_verma.eng@zohomail.in
+    - db.sumi_verma.eng@zohomail.in
+    - db.neetu_s.eng@zohomail.in
+
+  dp-analytics-readers:
+    - db.poonam_v.anlst@zohomail.in
+    - db.riya_r.anlst@zohomail.in
+    - db.vishesh_s.da@zohomail.in
