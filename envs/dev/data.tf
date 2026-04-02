@@ -1,18 +1,29 @@
-data "terraform_remote_state" "infra" {
+data "terraform_remote_state" "workspace" {
   backend = "s3"
   config = {
-    bucket = "dp-tf-state-763432567385"
-    key    = "dev/cloud-infra/terraform.tfstate"
+    bucket = "thoughtbulls-dp-tf-state-763432567385"
+    key    = "platform-workspace-infra/${var.region}/${var.environment}/terraform.tfstate"
     region = "ap-south-1"
   }
 }
 
-data "terraform_remote_state" "bootstrap" {
+data "terraform_remote_state" "regional_bootstrap" {
   backend = "s3"
   config = {
-    bucket = "dp-tf-state-763432567385"
-    key    = "bootstrap-metastore/ap-south-1/terraform.tfstate"
+    bucket = "thoughtbulls-dp-tf-state-763432567385"
+    key    = "platform-foundation-infra/regional/${var.region}/uc-metastore/terraform.tfstate"
     region = "ap-south-1"
+    use_lockfile = true
+  }
+}
+
+data "terraform_remote_state" "account_bootstrap" {
+  backend = "s3"
+  config = {
+    bucket = "thoughtbulls-dp-tf-state-763432567385"
+    key    = "platform-foundation-infra/global/account-bootstrap/${var.region}/terraform.tfstate"
+    region = "ap-south-1"
+    use_lockfile = true
   }
 }
 

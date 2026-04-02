@@ -14,7 +14,7 @@ terraform {
 
 provider "databricks" {
   alias      = "account"
-  host       = "https://accounts.cloud.databricks.com"
+  host       = var.account_host
   account_id = var.databricks_account_id
 }
 

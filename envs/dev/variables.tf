@@ -6,6 +6,8 @@ variable "region" {}
 
 variable "databricks_account_id" {}
 
+variable "account_host" {}
+
 variable "workspace_host" {}
 
 variable "platform_admin_group" {}
